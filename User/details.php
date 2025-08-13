@@ -72,6 +72,9 @@ $fetch = mysqli_fetch_assoc($q);
 										<P>
 											<?php echo "Degree : {$fetch['degree_name']}"; ?>
 										</P>
+										<P>
+											<?php echo "City : {$fetch['City']}"; ?>
+										</P>
 									  </div>
 									  <div class="tab-pane container p-0 fade" id="home2">
 									  <P>

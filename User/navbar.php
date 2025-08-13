@@ -170,7 +170,7 @@ $q = mysqli_query($conn, $sel);
           <a href="contact.php" class="nav-link">Contact</a>
         </li>
         <li class="nav-item cta">
-          <a href="#" class="btn btn-primary nav-link text-white px-3 py-2 consultation-btn" data-toggle="modal" data-target="#signupModal" style="margin-top: 5px;">Register Now!</a>
+          <a href="User/singing-signup.php" class="btn btn-primary nav-link text-white px-3 py-2 consultation-btn" data-toggle="modal" data-target="#signupModal" style="margin-top: 5px;">Register Now!</a>
         </li>
       </ul>
     </div>

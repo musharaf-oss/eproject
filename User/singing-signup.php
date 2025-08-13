@@ -36,7 +36,7 @@
 <p class="text-center mb-2 font-weight-bold">— OR —</p>
 
 <div class="text-center">
-<a href="register-lawyer.php" target="_blank" class="btn btn-primary font-weight-bold px-4 py-2" style="box-shadow: 0 4px 12px rgba(0,0,0,0.2); border-radius: 8px;">
+<a href="register-lawyer.php" target="_self" class="btn btn-primary font-weight-bold px-4 py-2" style="box-shadow: 0 4px 12px rgba(0,0,0,0.2); border-radius: 8px;">
   Register as a Lawyer
 </a>
 

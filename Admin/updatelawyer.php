@@ -89,7 +89,7 @@ if (isset($_POST["submitBtn"])) {
     if ($done) {
         echo "<script>
             alert('Record Updated');
-            window.location.href='viewlawyercopy.php';
+            window.location.href='viewlawyer.php';
         </script>";
     } else {
         echo "<script>alert('Update Failed');</script>";

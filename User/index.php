@@ -220,12 +220,12 @@ if (!$q) {
     <div class="col-lg-3 col-sm-6">
         <div class="block-2 ftco-animate">
             <div class="flipper">
-                <div class="front" style="background-image: url('../Admin/Admin/image/<?php echo $fetch["profile_image"]; ?>');">
+                <div class="front" style="background-image: url('../Admin/image/<?php echo $fetch["profile_image"]; ?>');">
                     <div class="box">
                         <h2><?php echo $fetch["full_Name"]; ?></h2>
-                        <a href="addcategory.php?id=<?php echo $fetch['category_id']; ?>">
+                        <h4 style='color:white'><a href="addcategory.php?id=<?php echo $fetch['category_id']; ?>">
                             <?php echo $fetch['category_name']; ?>
-                        </a>
+                        </a></h4>
                     <h6 style='color:white'><?php echo $fetch["City"]; ?></h6>
 					</div>
                 </div>
@@ -242,13 +242,18 @@ if (!$q) {
 
   <!-- Buttons -->
   <div class="actions">
-    <button type="button" class="btn btn-success rounded-pill m-2" ><a href="details.php">take Appointment</a></button>
-    <button type="button" class="btn btn-info rounded-pill m-2">view details</button>
+     <li class="nav-item cta">
+          <a href="details.php?id=<?php echo $fetch['lawyers_id']; ?>" class="btn btn-primary nav-link text-success px-3 py-2 "  style="margin-top: 5px;" >View Details!</a>
+        </li> 
+        <li class="nav-item cta">
+          <a href="#" class="btn btn-primary nav-link text-primary px-3 py-2 consultation-btn"  style="margin-top: 5px;">Take Appointment!</a>
+        </li>
+
   </div>
 
   <!-- Profile (image + name + category) -->
   <div class="author">
-    <img src="../Admin/Admin/image/<?php echo $fetch['profile_image']; ?>" alt="avatar">
+    <img src="../Admin/image/<?php echo $fetch['profile_image']; ?>" alt="avatar">
     <div class="name">
       <strong><?php echo $fetch["full_Name"]; ?></strong>
       <span class="position"><?php echo $fetch["category_name"]; ?></span>

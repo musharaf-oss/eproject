@@ -30,32 +30,58 @@ $count = mysqli_num_rows($q);
     <section class="ftco-section">
     	<div class="container-fluid px-md-5">
         <div class="row">
-			 <?php while($fetch = mysqli_fetch_assoc($q)){ ?>
-        	<div class="col-lg-3 col-sm-6">
-        		<div class="block-2 ftco-animate">
-	            <div class="flipper">
-	               <div class="front" style="background-image: url('../Admin/Admin/image/<?php echo $fetch["profile_image"]; ?>');">
-	                <div class="box">
-	                  <h2><?php echo $fetch["full_Name"] ?></h2>
-	                  <p><?php echo $fetch["category_name"]; ?></p>
-	                </div>
-	              </div>
-	              <div class="back">
-	                <!-- back content -->
-	                <blockquote>
-	                  <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text &rdquo;</p>
-	                </blockquote>
-	                <div class="author d-flex">
-	                  <div class="image align-self-center">
-	                <img src="../Admin/Admin/image/<?php echo $fetch['profile_image']; ?>" alt="">
-	                  </div>
-	                  <div class="name align-self-center ml-3"><?php echo $fetch["full_Name"] ?><span class="position"><?php echo $fetch["category_name"]; ?></span></div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
+		<?php while($fetch = mysqli_fetch_assoc($q)){ ?>
+    <div class="col-lg-3 col-sm-6">
+        <div class="block-2 ftco-animate">
+            <div class="flipper">
+                <div class="front" style="background-image: url('../Admin/image/<?php echo $fetch["profile_image"]; ?>');">
+                    <div class="box">
+                        <h2><?php echo $fetch["full_Name"]; ?></h2>
+                        <h4 style='color:white'><a href="addcategory.php?id=<?php echo $fetch['category_id']; ?>">
+                            <?php echo $fetch['category_name']; ?>
+                        </a></h4>
+                    <h6 style='color:white'><?php echo $fetch["City"]; ?></h6>
+					</div>
+                </div>
+                <div class="back">
+  <!-- Quote / paragraph -->
+  <div class="quote">
+    <blockquote>
+      <p>
+        &ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
+        One day however a small line of blind text.&rdquo;
+      </p>
+    </blockquote>
+  </div>
+
+  <!-- Buttons -->
+  <div class="actions">
+      <li class="nav-item cta">
+          <a href="details.php?id=<?php echo $fetch['lawyers_id']; ?>" class="btn btn-primary nav-link text-success px-3 py-2 "  style="margin-top: 5px;" >View Details!</a>
+        </li> 
+        <li class="nav-item cta">
+          <a href="#" class="btn btn-primary nav-link text-primary px-3 py-2 consultation-btn"  style="margin-top: 5px;">Take Appointment!</a>
+        </li>
+    <!-- <button type="button" class="btn btn-success rounded-pill m-2" ><a href="details.php">take Appointment</a></button>
+    <button type="button" class="btn btn-info rounded-pill m-2">view details</button> -->
+  </div>
+
+  <!-- Profile (image + name + category) -->
+  <div class="author">
+    <img src="../Admin/image/<?php echo $fetch['profile_image']; ?>" alt="avatar">
+    <div class="name">
+      <strong><?php echo $fetch["full_Name"]; ?></strong>
+      <span class="position"><?php echo $fetch["category_name"]; ?></span>
+    </div>
+  </div>
+</div>
+
+              </div>
+	            
+            </div>
+
         	</div>
-				 <?php } ?>      
+			   <?php } ?>    
         </div>
     	</div>
     </section>

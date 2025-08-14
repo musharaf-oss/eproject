@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2025 at 04:27 PM
+-- Generation Time: Aug 13, 2025 at 09:39 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -123,7 +123,8 @@ INSERT INTO `lawyers` (`lawyers_id`, `full_Name`, `father_name`, `user_name`, `e
 (13, 'hasnain', 'syed Azhar', 'user', 'm.hasnain0408@gmail.com', '123', 'as3-min.jpg', 'near multi chock', 12345567, '2025-08-20', 'Male', 2147483647, 2147483647, 2, 'tayab ali college', '2025-08-19', 'Karachi', '0000-00-00', 2, '2222222', 'switchcase.jpg', 3, 'Nazimabad 2, Near enquiry office, multichock'),
 (14, 'humaiyu', 'ejaz', 'panel', 'lizardstoons3@gmail.com', '12345', 'simple function.png', 'near multi chock', 1234567, '2025-08-13', 'Male', 2147483647, 2147483647, 2, 'tayab ali college', '2025-08-05', 'Karachi', '0000-00-00', 1, '2222222', 'Log in Group.png', 5, 'Nazimabad 2, Near enquiry office, multichock'),
 (15, 'farooq', 'aslam', 'user', 'tulaibkhan8787987@gmail.com', '1234', 'switchcase.jpg', 'Nazimabad 2, Near enquiry office, multichock', 2147483647, '2025-08-21', 'Male', 2147483647, 2147483647, 2, 'tayab ali college', '2025-08-21', 'Karachi Development Authority Colony', '0000-00-00', 2, '2222222', 'Ellipse 9.png', 6, 'near multi chock'),
-(17, 'khalid', 'aslam', 'user', 'Khalid@gmail.com', '3333333', '01-Khalid-Rehman-555x555.jpg', 'near multi chock', 2147483647, '2025-08-12', 'Male', 2147483647, 2147483647, 2, 'karachi university', '2025-08-12', 'Karachi', '0000-00-00', 1, '4589654', '2312F1.png', 2, 'near multi chock');
+(17, 'khalid', 'aslam', 'user', 'Khalid@gmail.com', '3333333', '01-Khalid-Rehman-555x555.jpg', 'near multi chock', 2147483647, '2025-08-12', 'Male', 2147483647, 2147483647, 2, 'karachi university', '2025-08-12', 'Karachi', '0000-00-00', 1, '4589654', '2312F1.png', 2, 'near multi chock'),
+(19, 'ikhlaq', 'aslam', 'htttf', 'Khalid@gmail.com', '09978786', 'result list.JPG', 'near multi chock', 2147483647, '2025-08-21', 'Female', 2147483647, 2147483647, 2, 'tayab ali college', '2025-08-06', 'Karachi', '0000-00-00', 1, '4589654', 'userpanel.JPG', 5, 'Nazimabad 2, Near enquiry office, multichock');
 
 --
 -- Indexes for dumped tables
@@ -176,7 +177,7 @@ ALTER TABLE `degree`
 -- AUTO_INCREMENT for table `lawyers`
 --
 ALTER TABLE `lawyers`
-  MODIFY `lawyers_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `lawyers_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- Constraints for dumped tables
